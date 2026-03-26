@@ -30,5 +30,17 @@ public class Main {
 	} else {
 	    System.out.println("Ambos tienen la misma área");
 	}
+	
+	//Clase Producto 
+	System.out.println("\n===== PRODUCTO =====");
+
+	Producto prod1 = new Producto("P01", "Laptop", 8000);
+	Producto prod2 = new Producto("P02", "Mouse", 120);
+
+	prod1.aplicarDescuento(10);
+	prod2.aplicarDescuento(20);
+
+	prod1.mostrar();
+	prod2.mostrar();
 	}
 }
