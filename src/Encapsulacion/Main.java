@@ -42,5 +42,15 @@ public class Main {
 
 	prod1.mostrar();
 	prod2.mostrar();
+	
+	//Clase Cuenta
+	System.out.println("\n===== CUENTA =====");
+
+    Cuenta c1 = new Cuenta("Roberto", 1000);
+
+    c1.depositar(500);
+    c1.retirar(200);
+    c1.retirar(2000); // prueba para el error
+    c1.mostrar();
 	}
 }
