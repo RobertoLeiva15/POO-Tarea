@@ -45,12 +45,27 @@ public class Main {
 	
 	//Clase Cuenta
 	System.out.println("\n===== CUENTA =====");
-
+	
     Cuenta c1 = new Cuenta("Roberto", 1000);
-
     c1.depositar(500);
     c1.retirar(200);
     c1.retirar(2000); // prueba para el error
     c1.mostrar();
+    
+    //Clase Libro
+    System.out.println("\n===== LIBRO =====");
+    Libro l1 = new Libro("Viernes de Dolores", "Miguel Ángel Asturias", 200);
+    Libro l2 = new Libro("Hombres de maíz", "Miguel Ángel Asturias", 400);
+    Libro l3 = new Libro("El tiempo principia en Xibalbá", "Luis de Lión", 350);
+    if (l1.esLargo()) {
+        System.out.println("El libro 1 es largo");
+    }
+    if (l2.esLargo()) {
+        System.out.println("El libro 2 es largo");
+    }
+    if (l3.esLargo()) {
+        System.out.println("El libro 3 es largo");
+    }
+    
 	}
 }
