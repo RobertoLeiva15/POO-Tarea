@@ -76,5 +76,17 @@ public class Main {
     System.out.println("Resta: " + calc.restar(25, 5));
     System.out.println("Multiplicacion: " + calc.multiplicar(15, 7));
     System.out.println("Division: " + calc.dividir(10, 0)); // prueba del error
+    
+    //Clase Fecha
+    
+    System.out.println("\n===== FECHA =====");
+
+    Fecha f1 = new Fecha(10, 5, 2024);
+    Fecha f2 = new Fecha(32, 13, 2024);
+    Fecha f3 = new Fecha(25, 12, 2024);
+
+    System.out.println("Fecha 1 valida: " + f1.esValida());
+    System.out.println("Fecha 2 valida: " + f2.esValida());
+    System.out.println("Fecha 3 valida: " + f3.esValida());
 	}
 }
