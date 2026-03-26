@@ -67,5 +67,14 @@ public class Main {
         System.out.println("El libro 3 es largo");
     }
     
+    //Clase Calculadora
+    System.out.println("\n===== CALCULADORA =====");
+
+    Calculadora calc = new Calculadora();
+
+    System.out.println("Suma: " + calc.sumar(50, 20));
+    System.out.println("Resta: " + calc.restar(25, 5));
+    System.out.println("Multiplicacion: " + calc.multiplicar(15, 7));
+    System.out.println("Division: " + calc.dividir(10, 0)); // prueba del error
 	}
 }
